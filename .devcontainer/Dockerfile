@@ -16,7 +16,7 @@ RUN wget https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh -
     ${CONDA_DIR}/bin/conda init bash
 
 # Setup Conda environment
-COPY ./environment.yml /tmp/environment.yml
+COPY environment.yml /tmp/environment.yml
 ENV CONDA_PLUGINS_AUTO_ACCEPT_TOS=true
 RUN /bin/bash -c "\
     source ${CONDA_DIR}/etc/profile.d/conda.sh && \
