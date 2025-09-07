@@ -1,0 +1,35 @@
+{
+	"name": "JHU Data Science Environment",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+
+	// Environment setup
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+						"path": "/bin/bash",
+						"args": ["-l"] // login shell required for conda
+					}
+				},
+				"python.defaultInterpreterPath": "/opt/conda/envs/en685648/bin/python",
+				"python.terminal.activateEnvironment": true
+			},
+
+			// Container VS Code extensions
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter",
+				"njpwerner.autodocstring"
+			]
+		}
+	},
+
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+	"forwardPorts": [8888] // Jupyter port
+}

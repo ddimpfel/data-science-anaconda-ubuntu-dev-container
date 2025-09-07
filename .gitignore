@@ -1,0 +1,6 @@
+*
+!/.devcontainer/
+!/.devcontainer/*
+!.gitignore
+!README.md
+!test.ipynb
