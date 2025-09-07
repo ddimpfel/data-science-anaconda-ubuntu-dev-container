@@ -15,6 +15,7 @@ Created during the Fall 2025 semester.
 
 - It runs on any machine as an Ubuntu Linux OS with UNIX commands.
 - All dependencies are handled by the dev container, so any results you create should be runnable by anyone else with the container.
+- Mounted to your local working directory so changes saved in container are replicated on your machine.
 
 ## Setup
 
@@ -48,6 +49,7 @@ Created during the Fall 2025 semester.
 6. Confirm your Conda environment is setup:
 
    - Run the test.ipynb file to confirm the dependency versions.
+     1. You may need to set the Python kernel, use the Jupyter kernel.
    - Run 'conda env list' to check you are using the correct Conda environment:
      1. Open a new terminal in the container's VSCode window by going to Terminal > New Terminal in the titlebar (this should open bash).
      2. You should see an '\*' next to the en685648 environment.
