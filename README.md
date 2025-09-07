@@ -61,6 +61,8 @@ You should now have a built container for all course development. When you'd lik
 To stop the container, you can simply close VSCode or run 'Dev Containers: Close Remote Connection'.
 
 My folder structure is setup so all modules can utilize the single dev container:
+
+```sh
 Data_Science/
 ├── .devcontainer/
 │   ├── devcontainer.json
@@ -75,6 +77,7 @@ Data_Science/
 │   └── lab2.ipynb
 ├── .gitignore
 ├── README.md
+```
 
 <span style='color: green;'>Recommended:</span> Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) to view and manage the container.
 
