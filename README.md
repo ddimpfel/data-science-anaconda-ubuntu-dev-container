@@ -56,6 +56,12 @@ Created during the Fall 2025 semester.
 
 ## Using the Container
 
+You must start the Docker Daemon first to use Dev Containers. 
+
+- <b>For Windows/MacOS</b>, install the Docker Desktop app and simply run it to begin.
+- <b>For Linux</b>, ```sudo systemctl start docker``` to start the Daemon.
+   - To start it everytime on bootup, ```sudo systemctl enable docker```.
+
 You should now have a built container for all course development. When you'd like to reopen the dev container, simply open your local workspace in VSCode and rerun the 'Dev Containers: Reopen in Container' command.
 
 To stop the container, you can simply close VSCode or run 'Dev Containers: Close Remote Connection'.
